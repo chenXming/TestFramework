@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TestFramework"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.summary = "A short description of TestFramework."
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"chenxiaoming"=>"chenxiaoming@360.cn"}
