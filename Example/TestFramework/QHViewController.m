@@ -8,6 +8,7 @@
 
 #import "QHViewController.h"
 #import "QHPushSdk.h"
+#import "AFNetworking.h"
 
 @interface QHViewController ()
 
@@ -20,7 +21,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     
+    self.title = @"Main";
+    
     [QHPushSdk showTest];
+    
+    AFHTTPRequestSerializer *ser = [AFHTTPRequestSerializer serializer];
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [QHPushSdk pushToViewController];
 }
 
 - (void)didReceiveMemoryWarning
