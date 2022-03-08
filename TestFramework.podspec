@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 #    'TestFramework' => ['TestFramework/Assets/*.png']
 #  }
 
-  s.public_header_files = 'Pod/Classes/MyFramework/header/*.h'
+  s.public_header_files = 'TestFramework/Classes/MyFramework/header/*.h'
   s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
 end
